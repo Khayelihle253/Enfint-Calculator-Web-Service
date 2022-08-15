@@ -9,22 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
 
     @GetMapping("/add/{first_number}/{second_number}")
-    public Calculator add(@PathVariable double first_number, @PathVariable double second_number){
-        return new Calculator(first_number, second_number, first_number+second_number);
+    public double add(@PathVariable double first_number, @PathVariable double second_number){
+        return new Calculator(first_number, second_number, first_number+second_number).getResult();
     }
 
     @GetMapping("/subtract/{first_number}/{second_number}")
-    public Calculator subtract(@PathVariable double first_number, @PathVariable double second_number){
-        return new Calculator(first_number, second_number, first_number-second_number);
+    public double subtract(@PathVariable double first_number, @PathVariable double second_number){
+        return new Calculator(first_number, second_number, first_number-second_number).getResult();
     }
 
     @GetMapping("/multiply/{first_number}/{second_number}")
-    public Calculator multiply(@PathVariable double first_number, @PathVariable double second_number){
-        return new Calculator(first_number, second_number, first_number*second_number);
+    public double multiply(@PathVariable double first_number, @PathVariable double second_number){
+        return new Calculator(first_number, second_number, first_number*second_number).getResult();
     }
 
     @GetMapping("/divide/{first_number}/{second_number}")
-    public Calculator divide(@PathVariable double first_number, @PathVariable double second_number){
-        return new Calculator(first_number, second_number, first_number/second_number);
+    public double divide(@PathVariable double first_number, @PathVariable double second_number){
+        return new Calculator(first_number, second_number, first_number/second_number).getResult();
     }
 }
