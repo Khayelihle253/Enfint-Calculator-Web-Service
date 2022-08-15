@@ -1,4 +1,4 @@
-package com.enfint.calculator.calculator;
+package com.enfint.calculator.calculator.model;
 
 public class Calculator {
     private double first_number;
