@@ -1,5 +1,5 @@
 # Enfint-Calculator-Web-Service
-This alculator RESTful web service implemented in Java using the framework Spring Boot. It supports the following math operations:
+This alculator RESTful web service is implemented in Java using the Spring Boot framework. It supports the following math operations:
 
 - Addition
 - Subtraction
